@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+  <div class="container">
+    <div id="bank-area" class="bank-area ">
+      <h1 class="text-center">Welcome to Akash Bank</h1>
+      <div class="bank-form">
+        <h3>Login</h3>
+        <form action="#">
+          <input type="email" placeholder="Emil"> <br>
+          <input type="password" placeholder="password"> <br>
+          <button id="btn">Enter</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- transaction area start -->
+  <div id="transaction" class="transaction-area pt-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="single-tra tomato-bg">
+            <h2>Deposit</h2>
+            <span>$</span><span id="currentAmount">00</span>
+          </div>
+
+
+        </div>
+        <div class="col-xl-4">
+          <div class="single-tra blue-bg">
+            <h2>Withdraw</h2>
+            <span>$</span><span id="currentWithdraw">00</span>
+          </div>
+
+
+        </div>
+        <div class="col-xl-4">
+          <div class="single-tra cyan-bg">
+            <h2>Balance</h2>
+            <span>$</span><span id="Balance">1000</span>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="deposit-area">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="single-deposit">
+              <h4>Deposit</h4>
+              <form action="#">
+                <input id="depositAmount" type="text" placeholder="$ amount you want to deposit">
+              </form>
+              <button id="addDeposit" class="primary">Deposit</button>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="single-deposit">
+              <h4>Withdraw</h4>
+              <form action="#">
+                <input id="addWithdraw" type="text" placeholder="$ amount you want to Withdraw">
+              </form>
+              <button id="withdrawButton" class="primary">Withdraw</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- transaction area end -->
+ 
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/active.js"></script>
+</body>
+
+</html>
